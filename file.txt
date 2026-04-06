@@ -1,1 +1,2 @@
 Hello Git
+Now we are doing well
