@@ -1,9 +1,5 @@
 pipeline {
-    agent {
-        docker {
-            image 'node:18'
-        }
-    }
+    agent any
 
     stages {
         stage('Checkout') {
@@ -12,7 +8,7 @@ pipeline {
             }
         }
 
-        stage('Check Node') {
+        stage('Show Node') {
             steps {
                 sh 'node -v'
             }
